@@ -1,46 +1,21 @@
-# Getting Started with Create React App
+Framer : 디자이너들을 위해 프로토타입 등을 만들어주는 회사
+Framer Motion : Framer가 제공하는 ReactJS 애니메이션 라이브러리
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#1. Installation
 
-## Available Scripts
+설치 : npm install framer-motion
+motion패키지 => 태그에 직접적으로 애니메이션효과를 못주기 때문에 motion패키지를 통해 나와야함
+X <div></div>
+O <motion.태그>
 
-In the project directory, you can run:
+BUT 오류
 
-### `npm start`
+( Framer Motion 실행 오류 있으신 분들은 현 시점 기준으로 create-react-app 5버전이 나왔기 때문에
+npx create-react-app@5.0.0 my-app --template typescript을 통해
+create-react-app 5버전으로 프로젝트를 새로 만드시면 오류없이 진행하실 수 있습니다. )
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+https://github.com/gsoft-inc/craco/blob/master/packages/craco/README.md#installation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 버전 5가 아닐때에 수정
+  -> CRACO설치 , CRACO는 create-react-app의 설정사항을 override할 수 있게 해줌
+  -> CRACO 설치 -> craco.config.js파일 생성 -
