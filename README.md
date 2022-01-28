@@ -38,3 +38,36 @@ Variants란?
 - 자식 컴포넌트는 기본적으로 부모 컴포넌트의 Variants 값을 받음
 - 자식 컴포넌트가 순서대로(시간차) delay되길 원한다면 부모 variants에서 staggerChildren 설정
 - 똑같은 delay를 원한다면 delayChildren사용
+
+Event
+
+- while로 시작
+- whileHover : Hover이벤트
+- whileTap : 마우스 클릭시
+
+Drag 제약
+= Drag="x" 수평으로만 이동
+
+dragConstraints
+허용된 드래그 가능 영역에 제약 조건을 적용합니다.
+
+dragSnapToOrigin
+true인 경우 드래그 가능한 요소는 놓을 때 중심/원점으로 다시 애니메이션됩니다.
+
+dragElastic
+당기는 힘
+제한된 바깥을 벗어날 수 있는 이동 정도입니다.
+값은 0과 1사이의 값이어야함 ( 기본값은 0.5 )
+
+https://www.framer.com/docs/gestures/#drag
+
+- MotionValue
+
+MotionValues는 애니메이션 값의 상태와 속도를 추적합니다.
+
+https://www.framer.com/docs/motionvalue/
+
+-useViewportScroll
+
+뷰포트가 스크롤될 때 업데이트되는 MotionValues를 리턴합니다.
+https://www.framer.com/docs/motionvalue/##useviewportscroll
