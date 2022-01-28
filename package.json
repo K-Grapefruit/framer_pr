@@ -1,4 +1,5 @@
 {
+  "homepage": "https://K-Grapefruit/github.io/framer_pr",
   "name": "framer_pr",
   "version": "0.1.0",
   "private": true,
@@ -33,7 +34,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
