@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/github.io/framer_pr/static/js/main.24c5537a.chunk.js",
-    "main.js.map": "/github.io/framer_pr/static/js/main.24c5537a.chunk.js.map",
-    "runtime-main.js": "/github.io/framer_pr/static/js/runtime-main.196c7bbb.js",
-    "runtime-main.js.map": "/github.io/framer_pr/static/js/runtime-main.196c7bbb.js.map",
-    "static/js/2.3a863eba.chunk.js": "/github.io/framer_pr/static/js/2.3a863eba.chunk.js",
-    "static/js/2.3a863eba.chunk.js.map": "/github.io/framer_pr/static/js/2.3a863eba.chunk.js.map",
-    "index.html": "/github.io/framer_pr/index.html",
-    "static/js/2.3a863eba.chunk.js.LICENSE.txt": "/github.io/framer_pr/static/js/2.3a863eba.chunk.js.LICENSE.txt"
+    "main.js": "/framer_pr/static/js/main.24c5537a.chunk.js",
+    "main.js.map": "/framer_pr/static/js/main.24c5537a.chunk.js.map",
+    "runtime-main.js": "/framer_pr/static/js/runtime-main.dcb6c393.js",
+    "runtime-main.js.map": "/framer_pr/static/js/runtime-main.dcb6c393.js.map",
+    "static/js/2.ccd0bb1c.chunk.js": "/framer_pr/static/js/2.ccd0bb1c.chunk.js",
+    "static/js/2.ccd0bb1c.chunk.js.map": "/framer_pr/static/js/2.ccd0bb1c.chunk.js.map",
+    "index.html": "/framer_pr/index.html",
+    "static/js/2.ccd0bb1c.chunk.js.LICENSE.txt": "/framer_pr/static/js/2.ccd0bb1c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.196c7bbb.js",
-    "static/js/2.3a863eba.chunk.js",
+    "static/js/runtime-main.dcb6c393.js",
+    "static/js/2.ccd0bb1c.chunk.js",
     "static/js/main.24c5537a.chunk.js"
   ]
 }
