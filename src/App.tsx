@@ -173,8 +173,37 @@ const hideVariants = {
   },
 };
 
+const sliderBox = {
+  entry: (back: boolean) => {
+    return {
+      x: back ? -500 : 500,
+      opacity: 0,
+      scale: 0,
+    };
+  },
+  center: {
+    x: 0,
+    opacity: 1,
+    scale: 1,
+    rotateX: 360,
+    transition: {
+      duration: 1,
+    },
+  },
+  exit: (back: boolean) => {
+    return {
+      x: back ? 500 : -500,
+      opacity: 0,
+      scale: 0,
+      transition: {
+        duration: 1,
+      },
+    };
+  },
+};
 function App() {
   const [showing, setShowing] = useState(false);
+  const [back, setBack] = useState(false);
   const biggerBoxRef = useRef<HTMLDivElement>(null);
 
   //Motion Value
@@ -206,6 +235,17 @@ function App() {
     setShowing((prev) => !prev);
   };
 
+  const [visible, setVisible] = useState(1);
+
+  const nextPlease = () => {
+    setBack(false);
+    setVisible((prev) => (prev === 5 ? 5 : prev + 1));
+  };
+
+  const prevPlease = () => {
+    setBack(true);
+    setVisible((prev) => (prev === 1 ? 1 : prev - 1));
+  };
   return (
     <Wrapper style={{ background: gradient }}>
       <Com>
@@ -284,12 +324,38 @@ function App() {
           {showing ? (
             <Box5
               variants={hideVariants}
-              initial="initial"
+              initial="invisible"
               animate="visible"
               exit="leaving"
             />
           ) : null}
         </AnimatePresence>
+      </Com>
+      <Com
+        style={{ display: "flex", flexDirection: "column", marginLeft: "17px" }}
+      >
+        <AnimatePresence custom={back}>
+          <Box5
+            custom={back}
+            variants={sliderBox}
+            initial="entry"
+            animate="center"
+            exit="exit"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              fontSize: "28px",
+              position: "absolute",
+              top: "290px",
+            }}
+            key={visible}
+          >
+            {visible}
+          </Box5>
+        </AnimatePresence>
+        <button onClick={nextPlease}>next</button>
+        <button onClick={prevPlease}>prev</button>
       </Com>
     </Wrapper>
   );
